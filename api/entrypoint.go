@@ -19,3 +19,5 @@ func init() {
 func Entrypoint(w http.ResponseWriter, r *http.Request) {
 	app.ServeHTTP(w, r)
 }
+
+var _ http.HandlerFunc = Entrypoint
